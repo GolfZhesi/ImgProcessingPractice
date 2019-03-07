@@ -213,7 +213,7 @@ int rectExtract(vector<Point>& corners)
 	warpPerspective(tmpImg, imgRect, transmtx, imgRect.size());
 	cout << "size" << (int)(imgRect.rows) << (int)(imgRect.cols) << endl;
 	imshow("outPutimg", imgRect);
-	imwrite("outputImg", imgRect);
+	imwrite("outputImg.jpg", imgRect);
 	return 0;
 }
 
